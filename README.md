@@ -81,3 +81,102 @@ The application is divided into three main parts:
                                │ API Requests
                                ▼
                             Backend
+## User Flow
+
+1. The user opens the frontend application.
+2. The user can browse available doctors.
+3. The user selects a doctor.
+4. The user chooses an available appointment slot.
+5. The appointment request is sent to the backend.
+6. The backend stores the appointment information in the database.
+7. The user can view and manage their appointments.
+8. The user can make online payments using Razorpay.
+
+## Admin Flow
+
+1. The admin logs into the admin panel.
+2. The admin dashboard communicates with the backend API.
+3. The admin can add and manage doctors.
+4. The admin can view and manage appointments.
+5. The admin can monitor users and appointment-related data.
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+
+- React.js
+- Vite
+- JavaScript
+- CSS / Tailwind CSS
+- React Router DOM
+- Axios
+- React Toastify
+
+## Admin Panel
+
+- React.js
+- Vite
+- Axios
+- React Router DOM
+- React Toastify
+
+## Backend
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+
+## Other Services
+
+- Razorpay – Online payment integration
+- Cloudinary – Image storage and management
+- Render – Backend deployment
+- Vercel – Frontend and Admin deployment
+
+---
+
+# 📂 Project Structure
+
+```text
+Doctor-Appointment/
+│
+├── Frontend/
+│   ├── public/
+│   ├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── context/
+│   ├── package.json
+│   └── vite.config.js
+│
+├── admin/
+│   ├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── package.json
+│   └── vite.config.js
+│
+├── backend/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── config/
+│   ├── package.json
+│   └── server.js
+│
+├── .gitignore
+└── README.md
+
+---
+
+# 💻 Run Locally
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/Shivamyadav-11/Doctor-Appointment.git
